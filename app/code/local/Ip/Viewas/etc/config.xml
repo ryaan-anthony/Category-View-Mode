@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ip_Viewas>
+            <version>0.1.0</version>
+        </Ip_Viewas>
+    </modules>
+    <global>
+        <models>
+            <viewas>
+                <class>Ip_Viewas_Model</class>
+            </viewas>
+        </models>
+        <blocks>
+            <catalog>
+                <rewrite>
+                    <product_list_toolbar>Ip_Viewas_Block_Catalog_Toolbar</product_list_toolbar>
+                </rewrite>
+            </catalog>
+            <viewas>
+                <class>Ip_Viewas_Block</class>
+            </viewas>
+        </blocks>
+
+        <resources>
+            <viewas_setup>
+                <setup>
+                    <module>Ip_Viewas</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+            </viewas_setup>
+        </resources>
+    </global>
+</config>
